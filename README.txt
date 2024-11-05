@@ -24,9 +24,11 @@
 # SUCH DAMAGE.
 #
 # PURPOSE of this SCRIPT
-# This code connects to a network device and retrieves the current working configuration. 
-#It then detects the changes made, creates a report with the first lines of changes, 
+
+# This code connects to a network device and retrieves the current working configuration.
+#Then detects the changes made, creates a report with the change lines,
 #and also backs up the new version of the configuration.
+#
 #
 # This script requires the following variables to be defined:
 # 
