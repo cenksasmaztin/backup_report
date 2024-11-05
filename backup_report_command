@@ -1,0 +1,23 @@
+python3 backup_report.py -i 192.168.1.250 -u admin -p 1qaz2wsx -c "show running-config"
+
+For more than one iphone address user , 
+
+Examples
+For HP Comware Switch:
+Command: display current-configuration
+Copy code
+python backup_report.py -i 192.168.1.251 -u admin -p password123 -c "display current-configuration"
+
+For Cisco Switch:
+Command: show running-config
+Copy code
+python backup_report.py -i 192.168.1.252 -u admin -p password123 -c "show running-config"
+
+Aruba CX Switch:
+Command: show running-configuration
+
+Copy code
+python backup_report.py -i 192.168.1.253 -u admin -p password123 -c "show running-configuration"
+
+
+
