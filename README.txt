@@ -36,7 +36,7 @@
 
 #Command examples
 #python3 backup_report.py -i 192.168.1.250 -u admin -p 1qaz2wsx -c "show running-config"
-#For more than one iphone address user , 
+
 
 #Examples
 #For HP Comware Switch:
