@@ -64,3 +64,16 @@
 #from datetime import datetime
 #import difflib
 #import re
+
+he backup_report.py file includes the following Python libraries:
+
+	1.	paramiko - for SSH connections.
+	2.	argparse - for command-line argument parsing.
+	3.	datetime - for handling date and time.
+	4.	difflib - for comparing configurations.
+	5.	re - for regular expressions.
+
+The command to install the necessary libraries on a Linux environment without a virtual environment is:
+sudo apt install python3-paramiko
+The other libraries (argparse, datetime, difflib, re) are part of the Python standard library and do not require additional installation. Make sure Python 3 is installed for compatibility. ￼
+
