@@ -77,5 +77,46 @@ he backup_report.py file includes the following Python libraries:
 
 The command to install the necessary libraries on a Linux environment without a virtual environment is:
 sudo apt install python3-paramiko
-The other libraries (argparse, datetime, difflib, re) are part of the Python standard library and do not require additional installation. Make sure Python 3 is installed for compatibility. ￼
+The other libraries (argparse, datetime, difflib, re) are part of the Python standard library and do not require additional installation. Make sure Python 3 is installed for compatibility. 
+
+TR
+
+BU SCRIPTİN AMACI
+
+Bu kod, bir ağ cihazına bağlanarak mevcut çalışan yapılandırmayı alır. Yapılan değişiklikleri algılar, değişiklik satırlarıyla bir rapor oluşturur ve yeni yapılandırma sürümünün yedeğini alır.
+
+Gereksinimler
+
+Bu scriptin çalışması için aşağıdaki değişkenlerin tanımlanması gerekmektedir:
+
+Komut Örnekleri
+
+python3 backup_report.py -i 192.168.1.250 -u admin -p 1qaz2wsx -c "show running-config"
+Örnek Kullanımlar
+HP Comware Switch için:
+Komut: display current-configuration
+Kod:
+python backup_report.py -i 192.168.1.251 -u admin -p password123 -c "display current-configuration"
+Cisco Switch için:
+Komut: show running-config
+Kod:
+python backup_report.py -i 192.168.1.252 -u admin -p password123 -c "show running-config"
+Aruba CX Switch için:
+Komut: show running-configuration
+Kod:
+python backup_report.py -i 192.168.1.253 -u admin -p password123 -c "show running-configuration"
+Gerekli Modüllerin Yüklenmesi
+
+backup_report.py dosyası aşağıdaki Python kütüphanelerini içermektedir:
+
+paramiko - SSH bağlantıları için.
+argparse - Komut satırı argümanlarını almak için.
+datetime - Tarih ve saat işlemleri için.
+difflib - Yapılandırmaları karşılaştırmak için.
+re - Düzenli ifadeler için.
+Gerekli Kütüphanelerin Yüklenmesi
+Linux ortamında gerekli kütüphaneleri sanal ortam olmadan yüklemek için:
+
+sudo apt install python3-paramiko
+Diğer kütüphaneler (argparse, datetime, difflib, re), Python standart kütüphanesinin bir parçasıdır ve ek bir yükleme gerektirmez. Python 3'ün kurulu olduğundan emin olun.￼
 
